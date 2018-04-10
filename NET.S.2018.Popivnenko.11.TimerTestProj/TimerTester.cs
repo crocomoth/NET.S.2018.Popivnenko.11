@@ -20,7 +20,8 @@ namespace NET.S._2018.Popivnenko._11.TimerTestProj
 
         private void CallBack(object sender, TimerEventArgs e)
         {
-            Debug.WriteLine($"sender");
+            Debug.WriteLine($"sender {sender}");
+            Debug.WriteLine($"args {e.DateTime}");
 
         }
     }

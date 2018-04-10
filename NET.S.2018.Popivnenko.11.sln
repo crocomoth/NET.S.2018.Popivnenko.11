@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.S.2018.Popivnenko.11.Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.S.2018.Popivnenko.11.TimerTestProj", "NET.S.2018.Popivnenko.11.TimerTestProj\NET.S.2018.Popivnenko.11.TimerTestProj.csproj", "{BFB38104-9354-4DDD-8A09-456270493FA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.S.2018.Popivnenko.11.BinarySearch", "NET.S.2018.Popivnenko.11.BinarySearch\NET.S.2018.Popivnenko.11.BinarySearch.csproj", "{AF4CAF45-9C79-49A7-9429-0F9DAD35AB9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.S.2018.Popivnenko.11.Fibonacci", "NET.S.2018.Popivnenko.11.Fibonacci\NET.S.2018.Popivnenko.11.Fibonacci.csproj", "{377B4DD1-3DFA-49B9-9C87-C8D5700014F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{BFB38104-9354-4DDD-8A09-456270493FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB38104-9354-4DDD-8A09-456270493FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB38104-9354-4DDD-8A09-456270493FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4CAF45-9C79-49A7-9429-0F9DAD35AB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4CAF45-9C79-49A7-9429-0F9DAD35AB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4CAF45-9C79-49A7-9429-0F9DAD35AB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4CAF45-9C79-49A7-9429-0F9DAD35AB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377B4DD1-3DFA-49B9-9C87-C8D5700014F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377B4DD1-3DFA-49B9-9C87-C8D5700014F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377B4DD1-3DFA-49B9-9C87-C8D5700014F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377B4DD1-3DFA-49B9-9C87-C8D5700014F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

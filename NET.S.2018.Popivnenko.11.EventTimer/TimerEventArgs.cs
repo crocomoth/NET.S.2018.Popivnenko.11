@@ -11,10 +11,11 @@ namespace NET.S._2018.Popivnenko._11.EventTimer
         public TimerEventArgs(DateTime dateTime, string message)
         {
             DateTime = dateTime;
-            Message = message ?? throw new ArgumentNullException(nameof(message));
+            this.Message = message ?? throw new ArgumentNullException(nameof(message));
         }
 
         public DateTime DateTime { get; protected set; }
+
         public string Message { get; protected set; }
     }
 }

@@ -1,15 +1,13 @@
-﻿using NET.S._2018.Popivnenko._11.EventTimer.API;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System;
 using System.Threading;
-using System.Threading.Tasks;
+using NET.S._2018.Popivnenko._11.EventTimer.API;
 
 namespace NET.S._2018.Popivnenko._11.EventTimer
 {
     public class Timer : ITimer
     {
+        private DateTime dateTime;
+
         public Timer(TimeSpan timeSpan)
         {
             TimerEvent = (sender, e) => { };
@@ -17,8 +15,6 @@ namespace NET.S._2018.Popivnenko._11.EventTimer
 
             ThreadPool.QueueUserWorkItem(this.Wait);
         }
-
-        private DateTime dateTime;
 
         public event TimerFunc TimerEvent;
 
@@ -32,6 +28,5 @@ namespace NET.S._2018.Popivnenko._11.EventTimer
             TimerEventArgs timerEventArgs = new TimerEventArgs(DateTime.Now, "ring ring!");
             TimerEvent.Invoke(this, timerEventArgs);
         }
-
     }
 }

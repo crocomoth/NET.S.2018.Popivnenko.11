@@ -23,7 +23,7 @@ namespace NET.S._2018.Popivnenko._11.Fibonacci
             yield return current;
 
             int tmp = 0;
-            while(true)
+            while (true)
             {
                 tmp = previous;
                 previous = current;

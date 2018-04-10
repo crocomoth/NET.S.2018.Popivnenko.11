@@ -22,7 +22,6 @@ namespace NET.S._2018.Popivnenko._11.TimerTestProj
         {
             Debug.WriteLine($"sender {sender}");
             Debug.WriteLine($"args {e.DateTime}");
-
         }
     }
 }

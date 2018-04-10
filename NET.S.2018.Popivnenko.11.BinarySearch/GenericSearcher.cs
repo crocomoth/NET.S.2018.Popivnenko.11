@@ -16,7 +16,6 @@ namespace NET.S._2018.Popivnenko._11.BinarySearch
         /// </summary>
         public static readonly int NotFound = -1;
 
-
         /// <summary>
         /// Implements the binary search algorithm.
         /// </summary>
@@ -33,7 +32,7 @@ namespace NET.S._2018.Popivnenko._11.BinarySearch
         {
             if (items is null)
             {
-
+                throw new ArgumentNullException(nameof(items));
             }
 
             int left = 0, right = items.Length - 1;
@@ -43,7 +42,9 @@ namespace NET.S._2018.Popivnenko._11.BinarySearch
             {
                 int result = comparison(items[mid], element);
                 if (result == 0)
+                {
                     return mid;
+                }
                 else if (result < 0)
                 {
                     left = mid + 1;
@@ -55,6 +56,7 @@ namespace NET.S._2018.Popivnenko._11.BinarySearch
                     mid = (left + right) / 2;
                 }
             }
+
             return NotFound;
         }
 
@@ -97,8 +99,9 @@ namespace NET.S._2018.Popivnenko._11.BinarySearch
                 return BinarySearch<T>(items, element, comparer.Compare);
             }
             else
+            {
                 throw new InvalidOperationException("Specified type doesn't implement IComparable<" + element.GetType() + "> interface");
+            }
         }
-
     }
 }
